@@ -1,5 +1,6 @@
 module Spree
   class User < Spree::Base
+    self.table_name = 'users'
     include UserAddress
     include UserPaymentSource
 
